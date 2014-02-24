@@ -296,13 +296,4 @@
     <ExportVideoProfile name="h264" profile="1" level="32768" />
     <ExportVideoProfile name="m4v" profile="1" level="16" />
 
-    <!--
-        FIXME:
-        We do not check decoder capabilities at present
-        At present, we only check whether windows media is visible
-        for TEST applications. For other applications, we do
-        not perform any checks at all.
-    -->
-    <VideoDecoderCap name="wmv" enabled="true"/>
-    <AudioDecoderCap name="wma" enabled="true"/>
 </MediaSettings>
