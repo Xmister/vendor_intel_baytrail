@@ -9,6 +9,7 @@ KERNEL_LOGLEVEL := 7
 
 TARGET_KERNEL_SOURCE := linux/kernel
 TARGET_KERNEL_ARCH := i386
+TARGET_UEFI_ARCH := i386
 TARGET_KERNEL_CONFIG := $(TARGET_KERNEL_ARCH)_byt_defconfig
 
 # Note, Iago installer also sets androidboot.disk via bootloader
