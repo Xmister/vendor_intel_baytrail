@@ -21,4 +21,5 @@ $(call inherit-mixin, ethernet, static)
 $(call inherit-mixin, navigationbar, true)
 $(call inherit-mixin, touch, max_1664S_8)
 $(call inherit-mixin, device-type, tablet)
+$(call inherit-mixin, libm, intel)
 
