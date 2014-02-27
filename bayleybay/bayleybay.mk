@@ -11,6 +11,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init.rc:root/init.$(TARGET_PRODUCT).rc \
 	$(LOCAL_PATH)/camera_bayleybay.xml:system/etc/camera_bayleybay.xml \
 	$(LOCAL_PATH)/init.recovery.rc:root/init.recovery.$(TARGET_PRODUCT).rc \
+        frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+
+# Enable Camera Launcher app support.
+INTEL_USE_CAMERA_LAUNCHER := true
 
 $(call inherit-mixin, audio, byt_alc262)
 $(call inherit-mixin, gms, true)
