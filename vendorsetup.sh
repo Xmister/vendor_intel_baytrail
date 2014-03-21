@@ -20,10 +20,6 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo bayleybay-eng
-add_lunch_combo bayleybay-user
-add_lunch_combo bayleybay-userdebug
-add_lunch_combo bayleybay32-eng
-add_lunch_combo baylake-eng
-add_lunch_combo baylake32-eng
-add_lunch_combo byt_t_ffrd8-eng
+add_lunch_combo baytrail_generic-eng
+add_lunch_combo baytrail_generic-userdebug
+add_lunch_combo baytrail_generic-user
