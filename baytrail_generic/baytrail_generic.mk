@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
 INTEL_USE_CAMERA_LAUNCHER := true
 RS_VECTORIZER_DISABLED := true
 
-$(call inherit-mixin, audio, byt_alc262)
+$(call inherit-mixin, audio, byt_alc283)
 $(call inherit-mixin, boot-arch, efi)
 $(call inherit-mixin, display-density, tv)
 $(call inherit-mixin, product-aapt, tvdpi_1920X1080)
