@@ -23,3 +23,6 @@
 add_lunch_combo baytrail_generic-eng
 add_lunch_combo baytrail_generic-userdebug
 add_lunch_combo baytrail_generic-user
+add_lunch_combo minnowboard_max-eng
+add_lunch_combo minnowboard_max-userdebug
+add_lunch_combo minnowboard_max-user
