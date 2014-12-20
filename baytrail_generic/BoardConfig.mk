@@ -9,3 +9,4 @@ TARGET_USE_MOKMANAGER := true
 TARGET_RELEASETOOLS_EXTENSIONS := device/intel/common/releasetools/releasetools-generic-efi.py
 
 TARGET_KERNEL_CONFIG_OVERRIDES += device/intel/baytrail/baytrail_generic/kernel_defconfig_overlay
+TARGET_KERNEL_CONFIG_OVERRIDES += device/intel/baytrail/baytrail_generic/pavilion
