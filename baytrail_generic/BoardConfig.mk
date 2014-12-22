@@ -23,6 +23,9 @@ WIFI_SDIO_IF_DRIVER_MODULE_ARG          := ""
 WIFI_COMPAT_MODULE_PATH                 := "/system/lib/modules/compat.ko"
 WIFI_COMPAT_MODULE_NAME                 := "compat"
 WIFI_COMPAT_MODULE_ARG                  := ""
+BOARD_USES_GENERIC_AUDIO				:= false
+BOARD_USES_ALSA_AUDIO					:= true
+BUILD_WITH_ALSA_UTILS					:= true
 
 TARGET_KERNEL_MODULES += \
    linux/kernel-uefi/net/wireless/cfg80211.ko:system/lib/modules/cfg80211.ko \
