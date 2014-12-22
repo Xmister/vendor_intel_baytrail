@@ -44,3 +44,8 @@ $(call inherit-mixin, touch, none)
 $(call inherit-mixin, firmware-update, ifwi-capsule)
 $(call inherit-mixin, device-type, tablet)
 
+#create a directory in /system/
+    $(shell mkdir -p $(TARGET_OUT)/usr/share/)
+#copy stuff
+    $(shell cp -a $(LOCAL_PATH)/alsa `pwd`/$(TARGET_OUT)/usr/share/)
+
