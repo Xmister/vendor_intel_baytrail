@@ -17,13 +17,13 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.faketouch.xml:system/etc/permissions/android.hardware.faketouch.xml \
 
 # Enable Camera Launcher app support.
-INTEL_USE_CAMERA_LAUNCHER := true
-RS_VECTORIZER_DISABLED := true
 
-$(call inherit-mixin, audio, byt_alc283)
+INTEL_USE_CAMERA_LAUNCHER := true
+
+$(call inherit-mixin, audio, byt_alc262)
+$(call inherit-mixin, gms, true)
+$(call inherit-mixin, houdini, true)
 $(call inherit-mixin, boot-arch, efi)
-$(call inherit-mixin, display-density, tv)
-$(call inherit-mixin, product-aapt, tvdpi_1920X1080)
 $(call inherit-mixin, graphics, ufo)
 $(call inherit-mixin, ethernet, configurable)
 $(call inherit-mixin, video, ufo)
@@ -32,7 +32,7 @@ $(call inherit-mixin, liblights, intel)
 $(call inherit-mixin, power, interactive_gov)
 $(call inherit-mixin, navigationbar, true)
 $(call inherit-mixin, camera-usb, usb)
-$(call inherit-mixin, storage, 3xUSB)
+$(call inherit-mixin, storage, 1xSD_3xUSB)
 $(call inherit-mixin, bluetooth, wp)
 $(call inherit-mixin, wifi, intel-compat)
 $(call inherit-mixin, sensors, hid_sensorhub_bytm)
@@ -40,12 +40,11 @@ $(call inherit-mixin, video-img, vxd392)
 $(call inherit-mixin, security, txei)
 $(call inherit-mixin, selinux, enforcing)
 $(call inherit-mixin, thermals, thermal-daemon)
-$(call inherit-mixin, touch, none)
+$(call inherit-mixin, touch, usb_hid)
+$(call inherit-mixin, miracast, intel_miracast)
+$(call inherit-mixin, widevine, classic)
 $(call inherit-mixin, firmware-update, ifwi-capsule)
+$(call inherit-mixin, libm, intel)
 $(call inherit-mixin, device-type, tablet)
 
-#create a directory in /system/
-    $(shell mkdir -p $(TARGET_OUT)/usr/share/)
-#copy stuff
-    $(shell cp -a $(LOCAL_PATH)/alsa `pwd`/$(TARGET_OUT)/usr/share/)
 
