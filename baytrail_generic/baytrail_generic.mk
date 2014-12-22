@@ -17,10 +17,10 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.faketouch.xml:system/etc/permissions/android.hardware.faketouch.xml \
 
 # Enable Camera Launcher app support.
-
 INTEL_USE_CAMERA_LAUNCHER := true
+RS_VECTORIZER_DISABLED := true
 
-$(call inherit-mixin, audio, byt_alc262)
+$(call inherit-mixin, audio, byt_alc283)
 $(call inherit-mixin, gms, true)
 $(call inherit-mixin, houdini, true)
 $(call inherit-mixin, boot-arch, efi)
@@ -44,7 +44,7 @@ $(call inherit-mixin, touch, usb_hid)
 $(call inherit-mixin, miracast, intel_miracast)
 $(call inherit-mixin, widevine, classic)
 $(call inherit-mixin, firmware-update, ifwi-capsule)
-$(call inherit-mixin, libm, intel)
+#$(call inherit-mixin, libm, intel)
 $(call inherit-mixin, device-type, tablet)
 
 
