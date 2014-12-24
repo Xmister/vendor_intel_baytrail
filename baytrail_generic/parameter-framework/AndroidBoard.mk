@@ -5,7 +5,7 @@ LOCAL_PATH := $(DEVICE_PATH)/parameter-framework
 ##################################################
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := parameter-framework.audio.bayleybay
+LOCAL_MODULE := parameter-framework.audio.baytrail_generic
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES :=  \
     parameter-framework.audio.common \
